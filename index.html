@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;300;500;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Hangman</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="menu-container active">
+      <div class="select-container">
+        <h1 class="title">Choose Game Theme</h1>
+        <select name="" id="" class="select-item">
+          <option value="">Animals</option>
+          <option value="">Food</option>
+          <option value="">Animals</option>
+          <option value="">Food</option>
+          <option value="">Food</option>
+        </select>
+      </div>
 
+      <div class="selectAudioLevel">
+        <h1 class="title">Choose Audio Level</h1>
+        <input type="range" min="0" max="100" />
+      </div>
+
+      <button class="start-game">Start new Game</button>
+    </section>
 
     <main>
-        <h1>Guess the word :)</h1>
-    
-        <h1 class="password"></h1>
-        <div class="buttons-container">
-    
-        </div>
-    
-    
-        <h3>Lives left: <span class="lifes-left">10</span></h3>
+      <h1>Guess the word :)</h1>
+
+      <h1 class="password"></h1>
+
+      <div class="buttons-container"></div>
+
+      <h3>Lives left: <span class="lifes-left">10</span></h3>
     </main>
 
-
-
-
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
