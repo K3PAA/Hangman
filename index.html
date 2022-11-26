@@ -15,20 +15,14 @@
   </head>
   <body>
     <section class="menu-container active">
-      <div class="select-container">
-        <h1 class="title">Choose Game Theme</h1>
-        <select name="" id="" class="select-item">
-          <option value="">Animals</option>
-          <option value="">Food</option>
-          <option value="">Animals</option>
-          <option value="">Food</option>
-          <option value="">Food</option>
-        </select>
-      </div>
-
       <div class="selectAudioLevel">
         <h1 class="title">Choose Audio Level</h1>
         <input type="range" min="0" max="100" />
+      </div>
+
+      <div class="select-container">
+        <h1 class="title finish">Click The Button to Start</h1>
+        <h3 class="game-status">Good Luck</h3>
       </div>
 
       <button class="start-game">Start new Game</button>
@@ -44,6 +38,7 @@
       <h3>Lives left: <span class="lifes-left">10</span></h3>
     </main>
 
-    <script src="app.js"></script>
+    <script src="game.js" type="module"></script>
+    <script src="app.js" type="module"></script>
   </body>
 </html>
