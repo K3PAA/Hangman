@@ -34,9 +34,6 @@ const menuConteiner = document.querySelector('.menu-container')
 const gameStatus = document.querySelector('.game-status')
 const password = document.querySelector('.finish')
 
-wonAudio.volume = 0.1
-lostAudio.volume = 0.1
-
 let lettersIndex = []
 let hiddenPassword = ''
 let lives = 10
