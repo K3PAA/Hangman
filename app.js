@@ -8,9 +8,8 @@ startingGameButton.addEventListener('click', () => {
     .then((res) => res.json())
     .then((res) => {
       game(res[0])
-
-      // console.log(res[0])
     })
-
-  menuConteiner.classList.remove('active')
+  setTimeout(() => {
+    menuConteiner.classList.remove('active')
+  }, 500)
 })
