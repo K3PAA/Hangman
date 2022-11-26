@@ -34,10 +34,8 @@ const menuConteiner = document.querySelector('.menu-container')
 const gameStatus = document.querySelector('.game-status')
 const password = document.querySelector('.finish')
 
-const yesAudio = new Audio('sound/yes.mp3')
-const noAudio = new Audio('sound/no.mp3')
-const wonAudio = new Audio('sound/LevelLost.mp3')
-const lostAudio = new Audio('sound/levelWon.mp3')
+wonAudio.volume = 0.1
+lostAudio.volume = 0.1
 
 let lettersIndex = []
 let hiddenPassword = ''
@@ -96,10 +94,8 @@ const clickedButton = (randomWord) => {
       if (randomWord.toUpperCase().includes(letter)) {
         showLetter(button)
         changeLetters(letter, randomWord)
-        yesAudio.play()
       } else {
         failedGuess(button, randomWord)
-        noAudio.play()
       }
     })
   })
@@ -161,6 +157,7 @@ const replaceText = (randomWord) => {
   if (newAnswer.toUpperCase() == randomWord.toUpperCase()) {
     password.innerHTML = `Given word was: ${randomWord.toUpperCase()}`
     gameStatus.innerHTML = 'You won, congratulations !'
+
     setTimeout(() => {
       menuConteiner.classList.add('active')
     }, 600)
